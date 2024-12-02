@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{
+            background-color: pink;
+        }
+        h1{
+            color: black;
+        }
+        label{
+            color: black;
+            font-size: 16px;
+        }
+        .card{
+            background-color: white;
+            display: inline-block;
+            border: 2px solid white;
+            padding: 30px;
+            margin-top: 150px;
+            position: relative;
+            z-index: 10;
+        }
+        input{
+           padding: 5px; 
+           margin: 5px;
+           font-size: 16px;
+        }
+        button{
+            margin: 20px;
+            padding: 5px 5px;
+            border-radius: 3px;
+        }
+        .box{
+            background-color: rgba(216, 112, 147, 0.632);
+            border: 2px solid pink;
+            height: 150px;
+            width: 150px;
+            border-radius: 12px;
+            transform: rotate(12deg);
+            position: absolute;
+            top: 50px;
+            left: 70px;
+        }
+        .box2{
+            background-color: rgba(216, 112, 147, 0.632);
+            border: 2px solid pink;
+            height: 150px;
+            width: 150px;
+            border-radius: 12px;
+            transform: rotate(12deg);
+            position: absolute;
+            top: 350px;
+            left: 150px;
+        }
+        .box3{
+            background-color: rgba(216, 112, 147, 0.632);
+            border: 2px solid pink;
+            height: 150px;
+            width: 150px;
+            border-radius: 12px;
+            transform: rotate(12deg);
+            position: absolute;
+            top: 350px;
+            left: 950px;
+        }
+        .box4{
+            background-color: rgba(216, 112, 147, 0.632);
+            border: 2px solid pink;
+            height: 150px;
+            width: 150px;
+            border-radius: 12px;
+            transform: rotate(12deg);
+            position: absolute;
+            top: 50px;
+            left: 150px;
+        }
+        .box5{
+            background-color: rgba(216, 112, 147, 0.632);
+            border: 2px solid pink;
+            height: 150px;
+            width: 150px;
+            border-radius: 12px;
+            transform: rotate(12deg);
+            position: absolute;
+            top: 70px;
+            left: 400px;
+        }
+        .box6{
+            background-color: rgba(216, 112, 147, 0.632);
+            border: 2px solid pink;
+            height: 150px;
+            width: 150px;
+            border-radius: 12px;
+            transform: rotate(12deg);
+            position: absolute;
+            top: 350px;
+            left: 700px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+    <center>
+        <div class="card">
+            <h1>Login</h1>
+            <label>Username</label>
+            <input type="text" id="uname" placeholder="enter your username">
+            <br>
+            <label>Password</label>
+            <input type="password" id="upass" placeholder="enter your password">
+            <br>
+            <button onclick="login()">Login</button>
+        </div>
+    </center>
+</body>
+<script>
+    function login(){
+        var username = document.getElementById(uname).value
+        var pass = document.getElementById(upass).value
+        if (username == "admin" && pass == "admin123")
+        {
+            alert("login successfully")
+        }
+        else if (username == "laiba" && pass == "laiba123")
+        {
+            alert("login successfully")
+        }
+        else
+        {
+            alert("Username or Password is incorrect")
+        }
+    }
+</script>
+</html>

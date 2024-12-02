@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        h1{
+            color: white;
+        }
+        label{
+            color: white;
+            font-size: 16px;
+        }
+        .card{
+            display: inline-block;
+            border: 2px solid white;
+            padding: 30px;
+            margin-top: 150px;
+            box-shadow: 10px 10px 20px white;
+        }
+        input{
+           padding: 5px; 
+           margin: 5px;
+           font-size: 16px;
+        }
+        button{
+            margin: 20px;
+            padding: 5px 5px;
+            border-radius: 3px;
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+        <div class="card">
+            <h1>Login</h1>
+            <label>Username</label>
+            <input type="text" id="uname" placeholder="enter your username">
+            <br>
+            <label>Password</label>
+            <input type="password" id="upass" placeholder="enter your password">
+            <br>
+            <button onclick="login()">Login</button>
+        </div>
+    </center>
+</body>
+<script>
+    function login(){
+        var username = document.getElementById("uname").value;
+        var pass = document.getElementById("upass").value;
+        if (username == "admin" && pass == "admin123")
+        {
+            alert("Login Successfully");
+            window.locaton.href = "imagegallerybts.html";
+        }
+        else if (username == "laiba" && pass == "laiba123")
+        {
+            alert("Login Successfully");
+            window.locaton.href = "imagegallerybts.html";
+        }
+        else 
+        {
+            alert("Username or Password is incorrect");
+        }
+    }
+</script>
+</html>

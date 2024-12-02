@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        h1{
+            color: white;
+        }
+        label{
+            color: white;
+            font-size: 16px;
+        }
+        .card{
+            display: inline-block;
+            border: 2px solid white;
+            padding: 30px;
+            margin-top: 150px;
+        }
+        input{
+            padding: 5px;
+            margin: 5px;
+            font-size: 16px;
+        }
+        button{
+            margin: 20px;
+            padding: 5px 5px;
+            border-radius: 3px;
+        }
+        p{
+            color: white;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="card">
+            <h1>Calculator</h1>
+            <label>First number</label>           
+            <input type="number" id="num1" placeholder="Enter your First number here">
+
+            <br>
+
+            <label>Operation</label>           
+            <input type="text" id="operation" placeholder="Enter operation (+,-,*,/)">
+
+            <br>
+
+            <label>Second number</label>
+            <input type="number" id="num2" placeholder="Enter your second number here">
+
+            <br>
+
+            <button onclick="calculateResult()">Submit</button>
+            <p id="result"></p>
+        </div>
+    </center>
+</body>
+<script>
+    function calculateResult() {
+        var firstnumber = parseFloat(document.getElementById("num1").value)
+        var operation = document.getElementById("operation").value
+        var secondnumber = parseFloat(document.getElementById("num2").value)
+        var resultText = "";
+ if(operation === "+")
+{ 
+    resultText = "Addition of number are:" + (firstnumber + secondnumber);
+}
+else  if(operation === "-")
+{
+    resultText = "Subtraction of numbers are:" + (firstnumber - secondnumber);
+}
+else if(operation === "*")
+{
+    resultText = "Multiplication of numbers are:" + (firstnumber * secondnumber);
+}
+else if(operation === "/")
+{
+    resultText = "Division of numbers are:" + (firstnumber / secondnumber);
+}
+else
+{
+    resultText = "Please choose a correct operation (+, -, *, /)";
+}
+document.getElementById("result").innerText = resultText;
+    }
+</script>
+</html>

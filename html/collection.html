@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // var fruits = ["Mango" , "Peach" , "Strawberry" , "Banana" , "Strawberry"]
+    // document.write(fruits.length)
+    // document.write(fruits[4])
+
+    var cars = ["Bugatti" , "Lambo" , "BMW"]
+    for(var c = 0 ; c<cars.length ; c++)
+{
+    document.write(cars[c] + "<br>")
+}
+
+
+var student1 = {
+    Name : "Muhammad Ali",
+    Age : 23,
+    Weight : 70.5,
+    Married : false,
+    Salary : null,
+    Job : undefined,
+    intro : function(){
+        return "My name is" + student1.Name + "and age is" + student1.Age;
+
+    }
+}
+document.write(student1.intro())
+</script>
+</html>

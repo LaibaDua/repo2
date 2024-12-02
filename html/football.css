@@ -1,0 +1,47 @@
+h1{
+    color: whitesmoke;
+    text-align: center;
+}
+img{
+    height: 350px;
+    width: 400px;
+}
+.p1{
+    color: whitesmoke;
+    font-style: italic;
+    width: 1300px;
+    text-align: center;
+}
+h3{
+    color: whitesmoke;
+    text-align: center;
+}
+.myheading{
+    border: 5px solid whitesmoke;
+    padding: 10px 55px;
+}
+.myheadingcard{
+    height: 340px;
+    width: 350px;
+    border: 5px solid whitesmoke;
+    margin: 10px;
+    display: inline-block
+}
+.myheadingcard img{
+    height: 75%;
+    width: 100%;
+}
+.p2 {
+    text-align: center;
+    color: whitesmoke;
+}
+body{
+    background-image: url(image/football2jpeg.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.h3{
+    text-align: center;
+    color: whitesmoke;
+    
+}
